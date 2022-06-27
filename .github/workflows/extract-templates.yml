@@ -30,16 +30,10 @@ jobs:
           # Replace App_Resources path in the config
           sed -i 's/\.\.\/\.\.\/tools\/assets\/App_Resources/App_Resources/g' nativescript.config.ts
 
-          # init a git repo, set up the committer and push the template to the branch
-
-          git config --global user.name 'NativeScript-Bot'
-          git config --global user.email 'oss@nativescript.org'
-          git config --global init.defaultBranch ${{ matrix.starter }}
-
-          git init
-          git remote add github ${{ github.repositoryUrl }}
-          git add --all
-          git commit -am 'chore(update): $(date)'
-          git status
-          git log
-          # git push --force --dry-run github ${{ matrix.starter }}
+      - name: Deploy
+        uses: s0/git-publish-subdir-action@develop
+        env:
+          REPO: self
+          BRANCH: ${{ matrix.starter }}
+          FOLDER: dist/nativescript-starter-${{ matrix.starter }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
