@@ -37,7 +37,7 @@ jobs:
           git config --global init.defaultBranch ${{ matrix.starter }}
 
           git init
-          git remote add github ${{ github.repositoryUrl }}
-          git add --all
-          git commit -am "chore(update): $(date)"
-          git push --force --dry-run github ${{ matrix.starter }}
+          echo "git remote add github ${{ github.repositoryUrl }}"
+          echo "git add --all"
+          echo "git commit -am 'chore(update): $(date)'"
+          echo "git push --force --dry-run github ${{ matrix.starter }}"
