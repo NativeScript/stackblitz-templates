@@ -8,8 +8,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-    matrix:
-      starter: ['angular', 'javascript', 'react', 'svelte', 'typescript', 'vue']
+    strategy:
+      matrix:
+        starter: ['angular', 'javascript', 'react', 'svelte', 'typescript', 'vue']
 
     steps:
       - uses: actions/checkout@v3
