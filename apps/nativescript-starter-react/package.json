@@ -1,16 +1,26 @@
 {
-  "main": "./src/app.ts",
-  "description": "NativeScript Application",
-  "license": "SEE LICENSE IN <your-license-filename>",
-  "repository": "<fill-your-repository-here>",
-  "scripts": {
-    "postinstall": "node ./tools/postinstall.js"
-  },
+  "name": "stackblitz-nativescript-react",
+  "main": "src/app.ts",
+  "version": "1.0.0",
+  "private": true,
   "dependencies": {
-    "@nativescript/core": "*"
+    "@nativescript/core": "~8.2.0",
+    "@react-navigation/core": "^5.15.3",
+    "react": "~16.13.1",
+    "react-nativescript": "^3.0.0-beta.1",
+    "react-nativescript-navigation": "3.0.0-beta.2"
   },
   "devDependencies": {
-    "@nativescript/android": "~8.2.1",
-    "@nativescript/ios": "~8.2.0"
+    "@nativescript/preview-cli": "^1.0.0-beta.15",
+    "@nativescript/types-minimal": "^8.2.0",
+    "@nativescript/webpack": "^5.0.7-alpha.3",
+    "@types/react": "16.9.34",
+    "patch-package": "~6.4.7",
+    "typescript": "~4.5.5"
+  },
+  "scripts": {
+    "postinstall": "patch-package",
+    "type-check": "tsc --noEmit",
+    "type-check:watch": "npm run type-check -- --watch"
   }
 }

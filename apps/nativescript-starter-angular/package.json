@@ -1,16 +1,30 @@
 {
-  "main": "./src/app.ts",
-  "description": "NativeScript Application",
-  "license": "SEE LICENSE IN <your-license-filename>",
-  "repository": "<fill-your-repository-here>",
-  "scripts": {
-    "postinstall": "node ./tools/postinstall.js"
-  },
+  "name": "stackblitz-nativescript-angular",
+  "main": "./src/main.ts",
+  "version": "1.0.0",
+  "private": true,
   "dependencies": {
-    "@nativescript/core": "*"
+    "@angular/animations": "~14.0.0",
+    "@angular/common": "~14.0.0",
+    "@angular/compiler": "~14.0.0",
+    "@angular/core": "~14.0.0",
+    "@angular/forms": "~14.0.0",
+    "@angular/platform-browser": "~14.0.0",
+    "@angular/platform-browser-dynamic": "~14.0.0",
+    "@angular/router": "~14.0.0",
+    "@nativescript/angular": "^14.0.0",
+    "@nativescript/core": "~8.2.0",
+    "@nativescript/theme": "~3.0.2",
+    "rxjs": "~7.5.0",
+    "zone.js": "~0.11.5"
   },
   "devDependencies": {
-    "@nativescript/android": "~8.2.1",
-    "@nativescript/ios": "~8.2.0"
+    "@angular-devkit/build-angular": "~14.0.0",
+    "@angular/compiler-cli": "~14.0.0",
+    "@nativescript/preview-cli": "^1.0.0-beta.15",
+    "@nativescript/types-minimal": "~8.2.0",
+    "@nativescript/webpack": "^5.0.7-alpha.3",
+    "@ngtools/webpack": "~14.0.0",
+    "typescript": "~4.7.0"
   }
 }

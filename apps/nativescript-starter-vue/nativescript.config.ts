@@ -1,16 +1,11 @@
 import { NativeScriptConfig } from '@nativescript/core';
 
 export default {
-	id: 'org.nativescript.startervue',
-	appResourcesPath: '../../tools/assets/App_Resources',
-	android: {
-		v8Flags: '--expose_gc',
+  id: 'org.nativescript.app',
+  appPath: 'app',
+  appResourcesPath: '../../tools/assets/App_Resources',
+  android: {
+    v8Flags: '--expose_gc',
     markingMode: 'none',
-    codeCache: true,
-    suppressCallJSMethodExceptions: false
   },
-  ios: {
-    discardUncaughtJsExceptions: false
-  },
-	appPath: 'src',
 } as NativeScriptConfig;
