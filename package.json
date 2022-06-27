@@ -5,18 +5,32 @@
   "private": true,
   "devDependencies": {
     "@nativescript/nx": "^4.0.1",
+    "@nativescript/types": "~8.2.0",
+    "@nativescript/webpack": "~5.0.0",
     "@nrwl/cli": "14.3.6",
+    "@nrwl/devkit": "14.3.6",
+    "@nrwl/eslint-plugin-nx": "14.3.6",
+    "@nrwl/jest": "14.3.6",
+    "@nrwl/linter": "14.3.6",
     "@nrwl/workspace": "14.3.6",
+    "@types/jest": "27.4.1",
+    "@types/node": "latest",
+    "@typescript-eslint/eslint-plugin": "~5.24.0",
+    "@typescript-eslint/parser": "~5.24.0",
+    "eslint": "~8.15.0",
+    "eslint-config-prettier": "8.1.0",
+    "jest": "27.5.1",
     "nx": "14.3.6",
     "prettier": "^2.6.2",
-    "typescript": "~4.7.2",
     "sass": "^1.32.0",
-    "@nativescript/webpack": "~5.0.0",
-    "@nativescript/types": "~8.2.0"
+    "ts-jest": "27.1.4",
+    "ts-node": "~10.8.0",
+    "typescript": "~4.7.2"
   },
   "dependencies": {
     "@nativescript/core": "~8.2.0",
-    "nativescript-theme-core": "~1.0.4"
+    "nativescript-theme-core": "~1.0.4",
+    "tslib": "^2.3.0"
   },
   "nativescript-nx": {
     "prefix": "stackblitz",
