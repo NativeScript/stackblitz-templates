@@ -24,12 +24,13 @@ Full URLS (used in redirects)
 </summary>
 
 ```
-https://stackblitz.com/fork/github/NativeScript/stackblitz-templates/tree/angular?title=NativeScript%20Starter%20Angular
-https://stackblitz.com/fork/github/NativeScript/stackblitz-templates/tree/javascript?title=NativeScript%20Starter%20JavaScript
-https://stackblitz.com/fork/github/NativeScript/stackblitz-templates/tree/react?title=NativeScript%20Starter%20React
-https://stackblitz.com/fork/github/NativeScript/stackblitz-templates/tree/svelte?title=NativeScript%20Starter%20Svelte
-https://stackblitz.com/fork/github/NativeScript/stackblitz-templates/tree/typescript?title=NativeScript%20Starter%20TypeScript
-https://stackblitz.com/fork/github/NativeScript/stackblitz-templates/tree/vue?title=NativeScript%20Starter%20Vue
+/              /typescript
+/angular       https://stackblitz.com/fork/github/NativeScript/stackblitz-templates/tree/angular?file=src%2Fapp%2Fitem%2Fitems.component.html&title=NativeScript%20Starter%20Angular
+/javascript    https://stackblitz.com/fork/github/NativeScript/stackblitz-templates/tree/javascript?file=app%2Fmain-page.xml&title=NativeScript%20Starter%20JavaScript
+/react         https://stackblitz.com/fork/github/NativeScript/stackblitz-templates/tree/react?file=src%2Fcomponents%2FHomeScreen.tsx&title=NativeScript%20Starter%20React
+/svelte        https://stackblitz.com/fork/github/NativeScript/stackblitz-templates/tree/svelte?file=app%2Fcomponents%2FHome.svelte&title=NativeScript%20Starter%20Svelte
+/typescript    https://stackblitz.com/fork/github/NativeScript/stackblitz-templates/tree/typescript?file=app%2Fmain-page.xml&title=NativeScript%20Starter%20TypeScript
+/vue           https://stackblitz.com/fork/github/NativeScript/stackblitz-templates/tree/vue?file=app%2Fcomponents%2FHome.vue&title=NativeScript%20Starter%20Vue
 ```
 
 </details>
