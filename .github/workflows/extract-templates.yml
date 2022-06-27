@@ -35,5 +35,6 @@ jobs:
         env:
           REPO: self
           BRANCH: ${{ matrix.starter }}
+          MESSAGE: "chore(update): {target-branch} to {sha}"
           FOLDER: dist/nativescript-starter-${{ matrix.starter }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
