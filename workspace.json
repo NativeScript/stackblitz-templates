@@ -1,5 +1,12 @@
 {
   "$schema": "./node_modules/nx/schemas/workspace-schema.json",
   "version": 2,
-  "projects": {}
+  "projects": {
+    "nativescript-starter-javascript": "apps/nativescript-starter-javascript",
+    "nativescript-starter-typescript": "apps/nativescript-starter-typescript",
+    "nativescript-starter-angular": "apps/nativescript-starter-angular",
+    "nativescript-starter-vue": "apps/nativescript-starter-vue",
+    "nativescript-starter-svelte": "apps/nativescript-starter-svelte",
+    "nativescript-starter-react": "apps/nativescript-starter-react"
+  }
 }

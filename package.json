@@ -2,18 +2,24 @@
   "name": "stackblitz-templates",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {
-    "start": "nx serve",
-    "build": "nx build",
-    "test": "nx test"
-  },
   "private": true,
-  "dependencies": {},
   "devDependencies": {
-    "nx": "14.3.6",
+    "@nativescript/nx": "^4.0.1",
     "@nrwl/cli": "14.3.6",
     "@nrwl/workspace": "14.3.6",
+    "nx": "14.3.6",
+    "prettier": "^2.6.2",
     "typescript": "~4.7.2",
-    "prettier": "^2.6.2"
+    "sass": "^1.32.0",
+    "@nativescript/webpack": "~5.0.0",
+    "@nativescript/types": "~8.2.0"
+  },
+  "dependencies": {
+    "@nativescript/core": "~8.2.0",
+    "nativescript-theme-core": "~1.0.4"
+  },
+  "nativescript-nx": {
+    "prefix": "stackblitz",
+    "framework": "vanilla"
   }
 }

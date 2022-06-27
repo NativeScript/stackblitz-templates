@@ -1,0 +1,50 @@
+{
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/nativescript-starter-angular/src",
+  "projectType": "application",
+  "targets": {
+    "ios": {
+      "executor": "@nativescript/nx:build",
+      "options": {
+        "platform": "ios"
+      },
+      "configurations": {
+        "build": {
+          "copyTo": "./dist/build.ipa"
+        },
+        "prod": {
+          "combineWithConfig": "build:prod"
+        }
+      }
+    },
+    "android": {
+      "executor": "@nativescript/nx:build",
+      "options": {
+        "platform": "android"
+      },
+      "configurations": {
+        "build": {
+          "copyTo": "./dist/build.apk"
+        },
+        "prod": {
+          "combineWithConfig": "build:prod"
+        }
+      }
+    },
+    "clean": {
+      "executor": "@nativescript/nx:build",
+      "options": {
+        "clean": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "apps/nativescript-starter-angular/**/*.ts",
+          "apps/nativescript-starter-angular/src/**/*.html"
+        ]
+      }
+    }
+  }
+}
