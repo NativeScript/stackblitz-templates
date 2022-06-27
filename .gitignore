@@ -4,6 +4,7 @@
 apps/**/App_Resources
 apps/**/node_modules
 apps/**/platforms
+apps/**/hooks
 apps/**/package-lock.json
 apps/**/yarn.lock
 
