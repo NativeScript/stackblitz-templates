@@ -34,9 +34,10 @@ jobs:
 
           git config --global user.name 'NativeScript-Bot'
           git config --global user.email 'oss@nativescript.org'
+          git config --global init.defaultBranch ${{ matrix.starter }}
 
           git init
-          git checkout -b ${{ matrix.starter }}
           git remote add origin ${{ github.repositoryUrl }}
+          git add --all
           git commit -am "chore(update): $(date)"
           git push origin ${{ matrix.starter }} --allow-unrelated-histories --dry-run
