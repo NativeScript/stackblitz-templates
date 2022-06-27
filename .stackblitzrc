@@ -1,0 +1,4 @@
+{
+  "installDependencies": true,
+  "startCommand": "./node_modules/.bin/preview-cli --config=https://preview.nativescript.org/api/config"
+}
