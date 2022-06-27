@@ -1,0 +1,41 @@
+name: Extract Templates
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    matrix:
+      starter: ['angular', 'javascript', 'react', 'svelte', 'typescript', 'vue']
+
+    steps:
+      - uses: actions/checkout@v3
+      - run: |
+          # create output directory
+          mkdir dist/
+
+          # copy template to output directory
+          cp -r apps/nativescript-starter-${{ matrix.starter }} dist/
+
+          # enter template directory
+          cd dist/nativescript-starter-${{ matrix.starter }}
+
+          # Remove nx project config
+          rm project.json
+          
+          # Replace App_Resources path in the config
+          sed -i 's/\.\.\/\.\.\/tools\/assets\/App_Resources/App_Resources/g' nativescript.config.ts
+
+          # init a git repo, set up the committer and push the template to the branch
+
+          git config --global user.name 'NativeScript-Bot'
+          git config --global user.email 'oss@nativescript.org'
+
+          git init -y
+          git checkout -b ${{ matrix.starter }}
+          git remote add origin ${{ github.repositoryUrl }}
+          git commit -am "chore(update): $(date)"
+          git push origin ${{ matrix.starter }} --allow-unrelated-histories --dry-run
