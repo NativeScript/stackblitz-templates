@@ -40,4 +40,4 @@ jobs:
           git remote add origin ${{ github.repositoryUrl }}
           git add --all
           git commit -am "chore(update): $(date)"
-          git push origin ${{ matrix.starter }} --allow-unrelated-histories --dry-run
+          git push --force --dry-run origin ${{ matrix.starter }}
