@@ -11,7 +11,8 @@
     "react-nativescript-navigation": "3.0.0-beta.2"
   },
   "devDependencies": {
-    "@nativescript/preview-cli": "^1.0.0-beta.15",
+    "@nativescript/preview-cli": "*",
+    "@nativescript/stackblitz": "*",
     "@nativescript/types-minimal": "^8.2.0",
     "@nativescript/webpack": "^5.0.7-alpha.3",
     "@types/react": "16.9.34",
