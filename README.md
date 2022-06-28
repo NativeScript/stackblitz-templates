@@ -16,6 +16,13 @@ The templates are managed on the `main` branch only - the individual flavor bran
 - TypeScript: https://new.nativescript.org/typescript
 - Vue: https://new.nativescript.org/vue
 
+https://nativescript.new
+https://nativescript.new/angular
+https://nativescript.new/javascript
+https://nativescript.new/react
+https://nativescript.new/svelte
+https://nativescript.new/typescript
+https://nativescript.new/vue
 
 <details>
 
