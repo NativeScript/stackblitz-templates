@@ -10,7 +10,7 @@
   "devDependencies": {
     "@nativescript/preview-cli": "*",
     "@nativescript/stackblitz": "*",
-    "@nativescript/types-minimal": "~8.2.0",
+    "@nativescript/types-minimal": "^8.2.1",
     "@nativescript/webpack": "alpha",
     "@types/node": "~17.0.21",
     "nativescript-vue-template-compiler": "~2.9.0",

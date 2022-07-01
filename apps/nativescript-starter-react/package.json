@@ -13,7 +13,7 @@
   "devDependencies": {
     "@nativescript/preview-cli": "*",
     "@nativescript/stackblitz": "*",
-    "@nativescript/types-minimal": "^8.2.0",
+    "@nativescript/types-minimal": "^8.2.1",
     "@nativescript/webpack": "alpha",
     "@types/react": "16.9.34",
     "patch-package": "~6.4.7",
