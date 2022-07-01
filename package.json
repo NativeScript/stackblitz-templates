@@ -23,7 +23,7 @@
     "@angular/compiler-cli": "~14.0.0",
     "@nativescript/preview-cli": "*",
     "@nativescript/stackblitz": "*",
-    "@nativescript/types-minimal": "~8.2.0",
+    "@nativescript/types-minimal": "^8.2.1",
     "@nativescript/webpack": "alpha",
     "@ngtools/webpack": "~14.0.0",
     "typescript": "~4.7.0"
