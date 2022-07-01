@@ -11,7 +11,7 @@
     "@nativescript/preview-cli": "*",
     "@nativescript/stackblitz": "*",
     "@nativescript/types-minimal": "~8.2.0",
-    "@nativescript/webpack": "^5.0.7-alpha.3",
+    "@nativescript/webpack": "alpha",
     "typescript": "~4.5.5"
   }
 }
