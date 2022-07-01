@@ -10,6 +10,6 @@
   "devDependencies": {
     "@nativescript/preview-cli": "*",
     "@nativescript/stackblitz": "*",
-    "@nativescript/webpack": "^5.0.7-alpha.3"
+    "@nativescript/webpack": "alpha"
   }
 }
