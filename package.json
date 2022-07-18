@@ -8,8 +8,8 @@
     "nativescript-vue": "~2.9.0"
   },
   "devDependencies": {
-    "@nativescript/preview-cli": "*",
-    "@nativescript/stackblitz": "*",
+    "@nativescript/preview-cli": "1.0.0-beta.18",
+    "@nativescript/stackblitz": "0.0.5",
     "@nativescript/types-minimal": "^8.2.1",
     "@nativescript/webpack": "alpha",
     "@types/node": "~17.0.21",
