@@ -21,8 +21,8 @@
   "devDependencies": {
     "@angular-devkit/build-angular": "~14.0.0",
     "@angular/compiler-cli": "~14.0.0",
-    "@nativescript/preview-cli": "*",
-    "@nativescript/stackblitz": "*",
+    "@nativescript/preview-cli": "1.0.0-beta.18",
+    "@nativescript/stackblitz": "0.0.5",
     "@nativescript/types-minimal": "^8.2.1",
     "@nativescript/webpack": "alpha",
     "@ngtools/webpack": "~14.0.0",
