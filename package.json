@@ -8,8 +8,8 @@
     "svelte-native": "~1.0.0"
   },
   "devDependencies": {
-    "@nativescript/preview-cli": "*",
-    "@nativescript/stackblitz": "*",
+    "@nativescript/preview-cli": "1.0.0-beta.18",
+    "@nativescript/stackblitz": "0.0.5",
     "@nativescript/types-minimal": "^8.2.1",
     "@nativescript/webpack": "alpha",
     "svelte": "~3.44.0",
