@@ -22,7 +22,7 @@ jobs:
           cp -r apps/nativescript-starter-${{ matrix.starter }} dist/
 
           # copy gitignore from template
-          cp tools/assets/dot.gitignore dist/
+          cp tools/assets/dot.gitignore dist
 
           # enter template directory
           cd dist/nativescript-starter-${{ matrix.starter }}
