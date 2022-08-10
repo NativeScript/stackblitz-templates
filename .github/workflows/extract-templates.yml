@@ -21,17 +21,14 @@ jobs:
           # copy template to output directory
           cp -r apps/nativescript-starter-${{ matrix.starter }} dist/
 
-          # copy gitignore from template
-          cp tools/assets/dot.gitignore dist
-
           # enter template directory
           cd dist/nativescript-starter-${{ matrix.starter }}
 
+          # copy gitignore from template
+          cp ../../tools/assets/dot.gitignore .gitignore
+
           # remove nx project config
           rm project.json
-
-          # rename to .gitignore
-          mv dot.gitignore .gitignore
 
           # replace App_Resources path in the config
           sed -i 's/\.\.\/\.\.\/tools\/assets\/App_Resources/App_Resources/g' nativescript.config.ts
