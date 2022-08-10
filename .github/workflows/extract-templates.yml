@@ -22,16 +22,22 @@ jobs:
           cp -r apps/nativescript-starter-${{ matrix.starter }} dist/
 
           # copy gitignore from template
-          cp tools/assets/dot.gitignore dist/.gitignore
+          cp tools/assets/dot.gitignore dist/
 
           # enter template directory
           cd dist/nativescript-starter-${{ matrix.starter }}
 
-          # Remove nx project config
+          # remove nx project config
           rm project.json
 
-          # Replace App_Resources path in the config
+          # rename to .gitignore
+          mv dot.gitignore .gitignore
+
+          # replace App_Resources path in the config
           sed -i 's/\.\.\/\.\.\/tools\/assets\/App_Resources/App_Resources/g' nativescript.config.ts
+
+          # print all files
+          ls -al .
 
       - name: Deploy
         uses: s0/git-publish-subdir-action@develop
