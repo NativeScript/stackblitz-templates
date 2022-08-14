@@ -30,7 +30,7 @@
     "typescript": "~4.7.2"
   },
   "dependencies": {
-    "@nativescript/core": "~8.2.0",
+    "@nativescript/core": "~8.3.0",
     "tslib": "^2.3.0"
   },
   "nativescript-nx": {

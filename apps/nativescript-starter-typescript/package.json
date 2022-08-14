@@ -4,14 +4,14 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
-    "@nativescript/core": "~8.2.0",
+    "@nativescript/core": "~8.3.0",
     "@nativescript/theme": "~3.0.2"
   },
   "devDependencies": {
     "@nativescript/preview-cli": "1.0.0-beta.18",
     "@nativescript/stackblitz": "0.0.5",
-    "@nativescript/types-minimal": "^8.2.1",
-    "@nativescript/webpack": "alpha",
+    "@nativescript/types-minimal": "~8.3.0",
+    "@nativescript/webpack": "~5.0.0",
     "typescript": "~4.5.5"
   }
 }

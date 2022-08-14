@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
-    "@nativescript/core": "~8.2.0",
+    "@nativescript/core": "~8.3.0",
     "@react-navigation/core": "^5.15.3",
     "react": "~16.13.1",
     "react-nativescript": "^3.0.0-beta.1",
@@ -13,8 +13,8 @@
   "devDependencies": {
     "@nativescript/preview-cli": "1.0.0-beta.18",
     "@nativescript/stackblitz": "0.0.5",
-    "@nativescript/types-minimal": "^8.2.1",
-    "@nativescript/webpack": "alpha",
+    "@nativescript/types-minimal": "~8.3.0",
+    "@nativescript/webpack": "~5.0.0",
     "@types/react": "16.9.34",
     "patch-package": "~6.4.7",
     "typescript": "~4.5.5"
