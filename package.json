@@ -8,7 +8,7 @@
     "@nativescript/theme": "~3.0.2"
   },
   "devDependencies": {
-    "@nativescript/preview-cli": "1.0.0-beta.18",
+    "@nativescript/preview-cli": "1.0.0-rc.0",
     "@nativescript/stackblitz": "0.0.5",
     "@nativescript/webpack": "alpha"
   }
