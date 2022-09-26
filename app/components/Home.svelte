@@ -1,7 +1,7 @@
 <page>
     <actionBar title="Home" />
     <gridLayout>
-        <label class="info" text="{message}" />
+        <label class="text-xl align-middle text-center text-gray-500" text="{message}" />
     </gridLayout>
 </page>
 
@@ -10,9 +10,7 @@
 </script>
 
 <style>
-    .info {
+    /* .info {
         font-size: 20;
-        horizontal-align: center;
-        vertical-align: center;
-    }
+    } */
 </style>
