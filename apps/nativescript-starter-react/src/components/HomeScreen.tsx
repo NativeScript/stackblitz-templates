@@ -14,7 +14,7 @@ export function HomeScreen({ navigation }: HomeScreenProps) {
     return (
         <flexboxLayout style={styles.container}>
             <label
-                style={styles.text}
+                className="text-2xl mb-4 font-bold text-center"
             >
                 Hello World!
             </label>
@@ -39,11 +39,6 @@ const styles = StyleSheet.create({
         height: "100%",
         flexDirection: "column",
         justifyContent: "center",
-    },
-    text: {
-        textAlignment: "center",
-        fontSize: 24,
-        color: "black",
     },
     button: {
         fontSize: 24,
