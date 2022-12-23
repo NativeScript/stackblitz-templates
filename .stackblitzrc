@@ -1,5 +1,5 @@
 {
   "installDependencies": true,
   "compileTrigger": "save",
-  "startCommand": "./node_modules/.bin/preview-cli"
+  "startCommand": "setup-nativescript-stackblitz && ns preview"
 }
