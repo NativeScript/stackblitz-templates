@@ -9,7 +9,7 @@
   },
   "devDependencies": {
     "@nativescript/preview-cli": "1.0.2",
-    "@nativescript/stackblitz": "0.0.5",
+    "@nativescript/stackblitz": "0.0.6",
     "@nativescript/tailwind": "^2.0.1",
     "@nativescript/types-minimal": "~8.3.0",
     "@nativescript/webpack": "~5.0.0",
