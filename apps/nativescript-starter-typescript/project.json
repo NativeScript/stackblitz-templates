@@ -1,4 +1,5 @@
 {
+  "name": "nativescript-starter-typescript",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "apps/nativescript-starter-typescript/src",
   "projectType": "application",

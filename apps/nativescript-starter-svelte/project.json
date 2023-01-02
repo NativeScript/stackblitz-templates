@@ -1,4 +1,5 @@
 {
+  "name": "nativescript-starter-svelte",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "apps/nativescript-starter-svelte/src",
   "projectType": "application",
