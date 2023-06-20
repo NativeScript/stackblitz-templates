@@ -10,7 +10,7 @@
     "react-nativescript-navigation": "^4.0.0"
   },
   "devDependencies": {
-    "@nativescript/preview-cli": "1.0.3",
+    "@nativescript/preview-cli": "1.0.4",
     "@nativescript/stackblitz": "0.0.8",
     "@nativescript/tailwind": "^2.0.1",
     "@nativescript/types-minimal": "~8.5.0",
