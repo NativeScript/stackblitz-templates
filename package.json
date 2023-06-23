@@ -8,7 +8,7 @@
     "@nativescript/theme": "~3.0.2"
   },
   "devDependencies": {
-    "@nativescript/preview-cli": "1.0.4",
+    "@nativescript/preview-cli": "1.0.5",
     "@nativescript/stackblitz": "0.0.8",
     "@nativescript/tailwind": "^2.0.1",
     "@nativescript/types-minimal": "~8.5.0",
