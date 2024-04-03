@@ -27,10 +27,10 @@
     "prettier": "^2.6.2",
     "ts-jest": "28.0.8",
     "ts-node": "10.9.1",
-    "typescript": "4.8.4"
+    "typescript": "~5.4.0"
   },
   "dependencies": {
-    "@nativescript/core": "~8.5.0",
+    "@nativescript/core": "~8.7.0",
     "tslib": "^2.4.1"
   },
   "nativescript-nx": {
