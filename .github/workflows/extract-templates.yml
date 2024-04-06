@@ -10,7 +10,7 @@ jobs:
 
     strategy:
       matrix:
-        starter: ['angular', 'javascript', 'react', 'svelte', 'typescript', 'vue']
+        starter: ['angular', 'javascript', 'react', 'solid', 'svelte', 'typescript', 'vue']
 
     steps:
       - uses: actions/checkout@v3
