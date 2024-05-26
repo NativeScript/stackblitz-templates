@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core'
+import { Component, OnInit, inject } from '@angular/core'
+import { Page } from '@nativescript/core'
 
 import { Item } from './item'
 import { ItemService } from './item.service'
@@ -8,9 +9,20 @@ import { ItemService } from './item.service'
   templateUrl: './items.component.html',
 })
 export class ItemsComponent implements OnInit {
-  items: Array<Item>
+  page = inject(Page);
+  itemService = inject(ItemService);
+  items: Array<Item>;
 
-  constructor(private itemService: ItemService) {}
+  constructor() {
+    // Setup large titles on iOS
+    this.page.on('loaded', (args) => {
+      if (__IOS__) {
+        const navigationController: UINavigationController =
+          this.page.frame.ios.controller;
+        navigationController.navigationBar.prefersLargeTitles = true;
+      }
+    });
+  }
 
   ngOnInit(): void {
     this.items = this.itemService.getItems()
