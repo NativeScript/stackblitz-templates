@@ -8,7 +8,7 @@
   },
   "devDependencies": {
     "@nativescript/nx": "^19.0.0",
-    "@nativescript/types": "~8.7.0",
+    "@nativescript/types": "~8.8.0",
     "@nativescript/webpack": "~5.0.0",
     "@nx/devkit": "19.4.1",
     "@nx/eslint": "19.4.1",
@@ -36,7 +36,7 @@
     "typescript": "~5.4.0"
   },
   "dependencies": {
-    "@nativescript/core": "~8.7.0",
+    "@nativescript/core": "~8.8.0",
     "tslib": "^2.6.3"
   },
   "nativescript-nx": {
