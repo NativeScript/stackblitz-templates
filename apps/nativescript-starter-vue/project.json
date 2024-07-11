@@ -39,13 +39,7 @@
       }
     },
     "lint": {
-      "executor": "@nrwl/linter:eslint",
-      "options": {
-        "lintFilePatterns": [
-          "apps/nativescript-starter-vue/**/*.ts",
-          "apps/nativescript-starter-vue/src/**/*.html"
-        ]
-      }
+      "executor": "@nx/eslint:lint"
     }
   }
 }

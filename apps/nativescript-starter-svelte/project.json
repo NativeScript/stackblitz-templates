@@ -39,13 +39,7 @@
       }
     },
     "lint": {
-      "executor": "@nrwl/linter:eslint",
-      "options": {
-        "lintFilePatterns": [
-          "apps/nativescript-starter-svelte/**/*.ts",
-          "apps/nativescript-starter-svelte/src/**/*.html"
-        ]
-      }
+      "executor": "@nx/eslint:lint"
     }
   }
 }
