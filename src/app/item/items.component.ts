@@ -1,30 +1,25 @@
-import { Component, OnInit, inject } from '@angular/core'
+import { Component, NO_ERRORS_SCHEMA, inject } from '@angular/core'
+import { NativeScriptCommonModule, NativeScriptRouterModule } from '@nativescript/angular'
 import { Page } from '@nativescript/core'
-
-import { Item } from './item'
 import { ItemService } from './item.service'
 
 @Component({
   selector: 'ns-items',
   templateUrl: './items.component.html',
+  imports: [NativeScriptCommonModule, NativeScriptRouterModule],
+  schemas: [NO_ERRORS_SCHEMA],
 })
-export class ItemsComponent implements OnInit {
-  page = inject(Page);
-  itemService = inject(ItemService);
-  items: Array<Item>;
+export class ItemsComponent {
+  itemService = inject(ItemService)
+  page = inject(Page)
 
   constructor() {
     // Setup large titles on iOS
     this.page.on('loaded', (args) => {
       if (__IOS__) {
-        const navigationController: UINavigationController =
-          this.page.frame.ios.controller;
-        navigationController.navigationBar.prefersLargeTitles = true;
+        const navigationController: UINavigationController = this.page.frame.ios.controller
+        navigationController.navigationBar.prefersLargeTitles = true
       }
-    });
-  }
-
-  ngOnInit(): void {
-    this.items = this.itemService.getItems()
+    })
   }
 }
