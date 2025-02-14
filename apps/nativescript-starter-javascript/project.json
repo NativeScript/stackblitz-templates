@@ -4,39 +4,40 @@
   "sourceRoot": "apps/nativescript-starter-javascript/src",
   "projectType": "application",
   "targets": {
-    "ios": {
+    "build": {
       "executor": "@nativescript/nx:build",
       "options": {
-        "platform": "ios"
+        "noHmr": true,
+        "production": true,
+        "uglify": true,
+        "release": true,
+        "forDevice": true
       },
       "configurations": {
-        "build": {
-          "copyTo": "./dist/build.ipa"
-        },
         "prod": {
-          "combineWithConfig": "build:prod"
+          "fileReplacements": [
+            {
+              "replace": "./src/environments/environment.ts",
+              "with": "./src/environments/environment.prod.ts"
+            }
+          ]
         }
       }
     },
-    "android": {
-      "executor": "@nativescript/nx:build",
+    "debug": {
+      "executor": "@nativescript/nx:debug",
       "options": {
-        "platform": "android"
+        "noHmr": true,
+        "uglify": false,
+        "release": false,
+        "forDevice": false,
+        "prepare": false
       },
-      "configurations": {
-        "build": {
-          "copyTo": "./dist/build.apk"
-        },
-        "prod": {
-          "combineWithConfig": "build:prod"
-        }
-      }
+      "configurations": {}
     },
     "clean": {
-      "executor": "@nativescript/nx:build",
-      "options": {
-        "clean": true
-      }
+      "executor": "@nativescript/nx:clean",
+      "options": {}
     },
     "lint": {
       "executor": "@nx/eslint:lint"
