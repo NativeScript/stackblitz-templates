@@ -4,14 +4,14 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
-    "@nativescript/core": "~8.8.0",
+    "@nativescript/core": "~8.9.0",
     "nativescript-vue": "~2.9.0"
   },
   "devDependencies": {
     "@nativescript/preview-cli": "1.0.13",
     "@nativescript/stackblitz": "0.0.8",
     "@nativescript/tailwind": "^2.1.0",
-    "@nativescript/types-minimal": "~8.8.0",
+    "@nativescript/types": "~8.9.0",
     "@nativescript/webpack": "~5.0.0",
     "@types/node": "^20.0.0",
     "nativescript-vue-template-compiler": "~2.9.0",
