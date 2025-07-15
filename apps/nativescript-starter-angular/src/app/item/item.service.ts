@@ -23,7 +23,7 @@ export class ItemService {
     { id: 17, name: 'Paco Alcácer', role: 'Forward' },
     { id: 18, name: 'Jordi Alba', role: 'Defender' },
     { id: 19, name: 'Digne', role: 'Defender' },
-    { id: 20, name: 'Sergi Roberto', role: 'Midfielder' },
+    { id: 20, name: 'Sergio Roberto', role: 'Midfielder' },
     { id: 21, name: 'André Gomes', role: 'Midfielder' },
     { id: 22, name: 'Aleix Vidal', role: 'Midfielder' },
     { id: 23, name: 'Umtiti', role: 'Defender' },
