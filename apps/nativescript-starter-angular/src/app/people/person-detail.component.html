@@ -1,0 +1,10 @@
+<ActionBar title="Details"></ActionBar>
+
+<FlexboxLayout flexDirection="column">
+  <FlexboxLayout class="m-4">
+    <Label class="text-3xl text-gray-400" [text]="person()?.id + '. '"></Label>
+    <Label class="text-3xl" [text]="person()?.name"></Label>
+  </FlexboxLayout>
+  <Label class="text-xl m-4" [text]="person()?.nationality"></Label>
+  <Label class="text-xl m-4" [text]="person()?.notableAchievements"></Label>
+</FlexboxLayout>
