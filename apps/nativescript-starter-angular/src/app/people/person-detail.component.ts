@@ -24,4 +24,10 @@ export class PersonDetailComponent implements OnInit {
     // log the person to the console
     console.log(this.person());
   }
+
+  formatAchievements(achievements: string[] | undefined | null): string {
+    if (!achievements || !Array.isArray(achievements)) return '';
+    return achievements.map( (a, index) =>  (index + 1) + '. ' + a.trim()).join('\n');
+  }
+
 }

@@ -5,6 +5,18 @@
     <Label class="text-3xl text-gray-400" [text]="person()?.id + '. '"></Label>
     <Label class="text-3xl" [text]="person()?.name"></Label>
   </FlexboxLayout>
-  <Label class="text-xl m-4" [text]="person()?.nationality"></Label>
-  <Label class="text-xl m-4" [text]="person()?.notableAchievements"></Label>
+
+  <StackLayout class="text-xl m-2 ml-6">
+    <Label class="mb-2" fontWeight="700" text="Nationality:"></Label>
+    <Label textWrap="true" [text]="person()?.nationality"></Label>
+  </StackLayout>
+
+   <StackLayout class="text-xl m-2">
+    <Label class="m-2 ml-4" fontWeight="700" text="Notable Achievements:"></Label>
+    <Label
+      class="text-xl m-2 ml-4"
+      [text]="formatAchievements(person()?.notableAchievements)"
+      textWrap="true">
+    </Label>
+  </StackLayout>
 </FlexboxLayout>
