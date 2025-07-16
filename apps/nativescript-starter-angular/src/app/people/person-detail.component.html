@@ -1,4 +1,9 @@
-<ActionBar title="Details"></ActionBar>
+<ActionBar title="Details">
+  <StackLayout *ngIf="isAndroid" orientation="horizontal" horizontalAlignment="left">
+    <Label text="< Back" color="#1976d2" (tap)="goBack()" style="font-size: 18; margin-left: 4"></Label>
+    <Label text="Details" color="#333" style="font-size: 20; font-weight:600; margin-left: 30"></Label>
+  </StackLayout>
+</ActionBar>
 
 <FlexboxLayout flexDirection="column">
   <FlexboxLayout class="m-4">

@@ -1,8 +1,9 @@
-import { ChangeDetectionStrategy, Component, NO_ERRORS_SCHEMA, OnInit, inject, signal } from '@angular/core'
-import { ActivatedRoute } from '@angular/router'
-import { NativeScriptCommonModule } from '@nativescript/angular'
-import { Person } from './person'
-import { PersonService } from './person.service'
+import { ChangeDetectionStrategy, Component, NO_ERRORS_SCHEMA, OnInit, inject, signal } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { NativeScriptCommonModule, RouterExtensions } from '@nativescript/angular';
+import { Person } from './person';
+import { PersonService } from './person.service';
+import { isAndroid } from '@nativescript/core';
 
 @Component({
   selector: 'ns-person-detail',
@@ -14,8 +15,10 @@ import { PersonService } from './person.service'
 })
 export class PersonDetailComponent implements OnInit {
   personService = inject(PersonService);
+  private routerExtensions = inject(RouterExtensions);
   route = inject(ActivatedRoute);
   person = signal<Person>(null);
+  isAndroid = isAndroid;
 
   ngOnInit(): void {
     const id = +this.route.snapshot.params.id;
@@ -23,6 +26,11 @@ export class PersonDetailComponent implements OnInit {
 
     // log the person to the console
     console.log(this.person());
+  }
+
+
+  goBack() {
+    this.routerExtensions.back();
   }
 
   formatAchievements(achievements: string[] | undefined | null): string {
