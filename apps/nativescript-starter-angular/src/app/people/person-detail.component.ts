@@ -14,7 +14,7 @@ import { isAndroid } from '@nativescript/core';
 })
 export class PersonDetailComponent implements OnInit {
   personService = inject(PersonService);
-  private routerExtensions = inject(RouterExtensions);
+routerExtensions = inject(RouterExtensions);
   route = inject(ActivatedRoute);
   person = signal<Person>(null);
   isAndroid = isAndroid;
