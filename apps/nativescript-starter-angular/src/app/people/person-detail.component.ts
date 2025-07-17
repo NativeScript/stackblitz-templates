@@ -3,7 +3,6 @@ import { ActivatedRoute } from '@angular/router';
 import { NativeScriptCommonModule, RouterExtensions } from '@nativescript/angular';
 import { Person } from './person';
 import { PersonService } from './person.service';
-import { isAndroid } from '@nativescript/core';
 
 @Component({
   selector: 'ns-person-detail',
