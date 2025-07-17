@@ -7,7 +7,6 @@ import { PersonService } from './person.service'
   selector: 'ns-people',
   templateUrl: './people.component.html',
   imports: [NativeScriptCommonModule, NativeScriptRouterModule],
-  providers: [PersonService],
   schemas: [NO_ERRORS_SCHEMA],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
