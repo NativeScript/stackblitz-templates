@@ -1,7 +1,7 @@
 import { Injectable, signal } from '@angular/core';
 import { Person } from './person';
 
-@Injectable()
+@Injectable({providedIn: 'root'})
 export class PersonService {
   items = signal<Person[]>([
     { id: 1, name: 'Alan Turing', nationality: 'British', notableAchievements: ['WW2 code breaking', 'Father of theoretical computer science and AI' ] },

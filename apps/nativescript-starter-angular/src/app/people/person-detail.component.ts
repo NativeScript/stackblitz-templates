@@ -9,7 +9,6 @@ import { isAndroid } from '@nativescript/core';
   selector: 'ns-person-detail',
   templateUrl: './person-detail.component.html',
   imports: [NativeScriptCommonModule],
-  providers: [PersonService],
   schemas: [NO_ERRORS_SCHEMA],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
