@@ -16,7 +16,7 @@ export class PersonDetailComponent implements OnInit {
 routerExtensions = inject(RouterExtensions);
   route = inject(ActivatedRoute);
   person = signal<Person>(null);
-  isAndroid = isAndroid;
+  isAndroid = __ANDROID__;
 
   ngOnInit(): void {
     const id = +this.route.snapshot.params.id;
