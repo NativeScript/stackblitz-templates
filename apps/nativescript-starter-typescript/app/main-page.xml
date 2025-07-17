@@ -1,5 +1,5 @@
 <Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo">
-    <ActionBar title="My App" icon="" />
+    <ActionBar title="Famous Computer Scientists" icon="" />
 
     <StackLayout class="p-4">
         <Label text="Please tap me" class="text-3xl text-center" />
