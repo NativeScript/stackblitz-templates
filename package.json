@@ -12,7 +12,7 @@
     "@nativescript/stackblitz": "^0.0.8",
     "@nativescript/tailwind": "^2.1.0",
     "@nativescript/types": "~8.9.0",
-    "@nativescript/webpack": "~5.0.24",
+    "@nativescript/webpack": "~5.0.27",
     "svelte": "~4.2.0",
     "svelte-loader": "^3.2.0",
     "svelte-native-preprocessor": "^1.0.0",
