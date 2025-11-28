@@ -10,7 +10,7 @@
     "@nativescript/preview-cli": "^1.0.14",
     "@nativescript/stackblitz": "^0.0.8",
     "@nativescript/tailwind": "^2.1.0",
-    "@nativescript/webpack": "~5.0.0",
+    "@nativescript/webpack": "~5.0.27",
     "tailwindcss": "~3.4.0"
   }
 }
