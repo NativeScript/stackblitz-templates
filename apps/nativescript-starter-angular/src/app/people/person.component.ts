@@ -5,7 +5,7 @@ import { PersonService } from './person.service'
 
 @Component({
   selector: 'ns-people',
-  templateUrl: './people.component.html',
+  templateUrl: './person.component.html',
   imports: [NativeScriptCommonModule, NativeScriptRouterModule],
   schemas: [NO_ERRORS_SCHEMA],
   changeDetection: ChangeDetectionStrategy.OnPush
