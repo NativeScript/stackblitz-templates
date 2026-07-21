@@ -8,10 +8,9 @@
     "sourceMap": true,
     "noEmitHelpers": true,
     "importHelpers": true,
-    "baseUrl": ".",
     "paths": {
-      "~/*": ["app/*"],
-      "@/*": ["app/*"]
+      "~/*": ["./app/*"],
+      "@/*": ["./app/*"]
     },
     "typeRoots": ["types"],
     "types": ["node"],
