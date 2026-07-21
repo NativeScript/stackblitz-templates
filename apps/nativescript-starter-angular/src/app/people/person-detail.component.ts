@@ -15,7 +15,7 @@ export class PersonDetailComponent implements OnInit {
   personService = inject(PersonService);
 routerExtensions = inject(RouterExtensions);
   route = inject(ActivatedRoute);
-  person = signal<Person>(null);
+  person = signal<Person | undefined>(undefined);
   isAndroid = __ANDROID__;
 
   ngOnInit(): void {

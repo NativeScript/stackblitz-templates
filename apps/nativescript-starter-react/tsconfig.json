@@ -7,12 +7,12 @@
     "emitDecoratorMetadata": true,
     "noEmitHelpers": true,
     "noEmitOnError": true,
+    "skipLibCheck": true,
     "jsx": "react",
     "lib": ["ESNext", "dom"],
-    "baseUrl": ".",
     "paths": {
-      "~/*": ["src/*"],
-      "@/*": ["src/*"]
+      "~/*": ["./src/*"],
+      "@/*": ["./src/*"]
     }
   },
   "include": ["./src/**/*.tsx?"],
