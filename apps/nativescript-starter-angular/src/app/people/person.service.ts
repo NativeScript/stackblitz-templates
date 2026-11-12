@@ -21,7 +21,7 @@ export class PersonService {
     { id: 15, name: 'Niklaus Wirth', nationality: 'Swiss', notableAchievements: ['Creator of Pascal, Modula, Oberon languages', 'Software engineering pioneer'] },
   ]);
 
-  getPerson(id: number): Person {
+  getPerson(id: number): Person | undefined {
     return this.items().find((person) => person.id === id);
   }
 }
