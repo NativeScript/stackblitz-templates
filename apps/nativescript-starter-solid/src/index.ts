@@ -1,9 +1,9 @@
 import { Application } from '@nativescript/core';
 import { render } from '@nativescript-community/solid-js';
 
-import { App } from './app.jsx';
+import { App } from './app';
 
-document.body.actionBarHidden = false;
+document.body.actionBarHidden = true;
 render(App, document.body);
 
 const create = () => document;
