@@ -2,7 +2,165 @@
 @tailwind components;
 @tailwind utilities;
 
-.h-center {
-  /* {N} specific css */
+.page {
+  background-color: #f4f6fa;
+}
+.header {
+  padding: 12 20 8 20;
+}
+.title {
+  font-size: 32;
+  font-weight: bold;
+  color: #10151f;
+}
+.subtitle {
+  font-size: 14;
+  color: #2c4f7c;
+}
+.saving {
+  vertical-align: center;
+  font-size: 13;
+  color: #2c4f7c;
+  background-color: #e3ebf6;
+  border-radius: 12;
+  padding: 4 10;
+}
+
+.tabs {
+  padding: 8 14;
+}
+.tab {
+  font-size: 15;
+  color: #4b5563;
+  background-color: #ffffff;
+  border-radius: 18;
+  padding: 8 16;
+  margin: 0 6;
+}
+.tab-active {
+  color: #ffffff;
+  background-color: #2c4f7c;
+}
+
+.list {
+  padding: 8 16;
+}
+.row {
+  background-color: #ffffff;
+  border-radius: 14;
+  padding: 14 16;
+  margin: 6 0;
+}
+.row-active {
+  border-width: 2;
+  border-color: #446b9e;
+}
+.row-title {
+  font-size: 17;
+  font-weight: bold;
+  color: #10151f;
+}
+.row-detail {
+  font-size: 13;
+  color: #6b7280;
+}
+.star {
+  font-size: 26;
+  color: #e0a526;
+  vertical-align: center;
+  padding: 0 4 0 16;
+}
+
+.card {
+  background-color: #2c4f7c;
+  border-radius: 20;
+  padding: 18 20;
+  margin: 8 16 24 16;
+}
+.card-empty {
+  color: #e3ebf6;
+  font-size: 15;
+  text-align: center;
+}
+.card-icon {
+  font-size: 34;
+  vertical-align: center;
+  margin-right: 14;
+}
+.card-title {
+  font-size: 19;
+  font-weight: bold;
+  color: #ffffff;
+}
+.card-detail {
+  font-size: 14;
+  color: #c9d7ea;
+}
+.card-temp {
+  font-size: 34;
+  font-weight: bold;
+  color: #ffffff;
+  vertical-align: center;
+}
+
+.state {
+  vertical-align: center;
   horizontal-align: center;
+  padding: 24;
+}
+.spinner {
+  color: #2c4f7c;
+}
+.state-icon {
+  font-size: 34;
+  text-align: center;
+}
+.state-text {
+  font-size: 15;
+  color: #4b5563;
+  text-align: center;
+  margin-top: 10;
+}
+.retry {
+  horizontal-align: center;
+  margin-top: 16;
+  padding: 10 24;
+  border-radius: 20;
+  background-color: #2c4f7c;
+  color: #ffffff;
+  font-size: 15;
+}
+
+.ns-dark .page {
+  background-color: #0b0f17;
+}
+.ns-dark .title,
+.ns-dark .row-title {
+  color: #f3f4f6;
+}
+.ns-dark .subtitle {
+  color: #8fb0dc;
+}
+.ns-dark .saving {
+  color: #c9d7ea;
+  background-color: #1d2a3d;
+}
+.ns-dark .tab,
+.ns-dark .row {
+  background-color: #161d2a;
+  color: #c4c9d4;
+}
+.ns-dark .tab-active {
+  color: #ffffff;
+  background-color: #446b9e;
+}
+.ns-dark .row-detail,
+.ns-dark .state-text {
+  color: #9aa3b2;
+}
+.ns-dark .spinner {
+  color: #8fb0dc;
+}
+.ns-dark .card {
+  background-color: #1d3557;
 }
